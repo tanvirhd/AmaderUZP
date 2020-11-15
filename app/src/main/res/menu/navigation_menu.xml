@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Admin Panel"
+            android:icon="@drawable/admin_icon"
+            android:id="@+id/adminpanel_menu_xml"/>
+        <!--<item android:title="LogIn/SignUP"
+            android:icon="@drawable/ic_signup"
+            android:id="@+id/signup_menu_xml"/>
+        <item android:title="Sign In"
+            android:icon="@drawable/ic_logout"
+            android:id="@+id/signin_menu_xml"/>-->
+        <item android:title="Log Out"
+            android:icon="@drawable/ic_logout"
+            android:id="@+id/logout_menu_xml"/>
+
+    </group>
+
+    <item android:title="Extra Options">
+        <menu>
+            <item
+                android:id="@+id/share1"
+                android:title="Option1" />
+
+            <item
+                android:id="@+id/share2"
+                android:title="Option2" />
+            <item
+                android:id="@+id/share3"
+                android:title="Option3" />
+        </menu>
+    </item>
+
+</menu>

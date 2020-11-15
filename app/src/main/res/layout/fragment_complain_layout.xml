@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdtan.amaderuzp.ComplainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text=" অভিযোগ "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinner_doptorsomuho_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/box_bacground_red"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/compalin_topic_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_bacground_red"
+            android:hint=" অভিযোগের বিষয়" />
+
+
+        <EditText
+            android:id="@+id/compalin_details_xml"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/red_box"
+            android:gravity="start"
+            android:hint=" অভিযোগ লিখুন" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text=" অভিযোগকারীর বিবরন "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/compalin_name_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/box_bacground_red"
+            android:hint=" আপনার নাম" />
+
+        <EditText
+            android:id="@+id/compalin_address_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_bacground_red"
+            android:hint=" আপনার বর্তমান ঠিকানা" />
+
+        <EditText
+            android:id="@+id/compalin_paddress_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_bacground"
+            android:hint=" আপনার স্থায়ী ঠিকানা" />
+
+        <EditText
+            android:id="@+id/compalin_email_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box_bacground"
+            android:hint=" আপনার ইমেইল" />
+
+        <EditText
+            android:id="@+id/compalin_phonenumber_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:text="+880"
+            android:inputType="number"
+            android:background="@drawable/box_bacground_red"
+            android:hint=" আপনার মোবাইল নাম্বার" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/verificationcode_xml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="@drawable/box_bacground"
+                android:hint="কোড দিন" />
+
+            <Button
+                android:id="@+id/btn_verify_xml"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:text="যাচাই করুন" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" * Red bordered box are must filled"
+            android:textColor="@color/red"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/btn_send_complain_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="অভিযোগ করুন" />
+
+    </LinearLayout>
+
+
+</ScrollView>
